@@ -2,6 +2,8 @@ import React, { useState } from 'react'
 import { Link, useNavigate } from 'react-router-dom'
 import { UserAuth } from '../context/AuthContext'
 import { Toast } from '../utils/Toast'
+import fondo from '/assets/footer-bg.jpg'
+import logo from '/assets/logo.png'
 
 const Login = () => {
 
@@ -65,12 +67,12 @@ const Login = () => {
       <div className='flex items-center py-4 px-20 z-[100] w-full fixed top-0 left-0 right-0 '>
         <div className='w-[6rem] md:w-[5rem] md:ml-0 mx-auto my-12 md:my-0'>
           <Link to='/'>
-            <img src='/src/assets/Logo.png' alt="Logo Nix" />
+            <img src={logo} alt="Logo Nix" />
           </Link>
         </div>
       </div>
       <div className='flex justify-center items-center w-full h-screen'>
-        <img className='hidden sm:block absolute w-full h-screen object-cover' src="./src/assets/footer-bg.jpg" alt="" />
+        <img className='hidden sm:block absolute w-full h-screen object-cover' src={fondo} alt="" />
         <div className='bg-[#080F28]/60 fixed top-0 left-0 w-full h-screen'></div>
         <div className='fixed w-full px-4 py-24 z-50'>
           <div className='max-w-[450px] h-[460px] mx-auto bg-[#080F28]/75 rounded-md'>
