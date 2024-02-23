@@ -1,16 +1,18 @@
 import React from 'react'
 import { Link } from 'react-router-dom';
+import fondo from '/assets/footer-bg.jpg'
+import logo from '/assets/logo.png'
 
 const Footer = () => {
     return (
         <>
             <footer className='w-full text-white relative py-6 px-4'>
-                <img className='w-full h-[30rem] md:h-[16rem] object-cover absolute top-0 left-0 z-0' src="/src/assets/footer-bg.jpg" alt="Background" />
+                <img className='w-full h-[30rem] md:h-[16rem] object-cover absolute top-0 left-0 z-0' src={fondo} alt="Background" />
                 <section className='relative z-10'>
                     <section className='flex justify-center'>
                         <figure className='w-[4rem]'>
                             <Link>
-                                <img src="/src/assets/Logo.png" alt="Logo Nix" />
+                                <img src={logo} alt="Logo Nix" />
                             </Link>
                         </figure>
                     </section>

@@ -3,6 +3,7 @@ import { Toast } from '../utils/Toast'
 import {
   Link, NavLink, useNavigate
 } from "react-router-dom";
+import  logo  from '/assets/logo.png'
 import { UserAuth } from '../context/AuthContext';
 import { RiMenu3Fill, RiCloseFill, RiUserLine, RiLogoutBoxRLine, RiHome3Line, RiMovieLine, RiComputerLine } from "react-icons/ri";
 
@@ -97,7 +98,7 @@ export default function Navbar() {
         <div className='flex w-full justify-between'>
           <div className='w-[4rem]'>
             <Link to='/'>
-              <img src='/src/assets/Logo.png' alt="Logo Nix" />
+              <img src={logo} alt="Logo Nix" />
             </Link>
           </div>
           {/* Btn hamburguesa */}

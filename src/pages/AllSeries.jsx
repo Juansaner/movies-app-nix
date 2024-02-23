@@ -9,6 +9,7 @@ import MoviesCard from '../components/MoviesCard';
 import Search from '../components/Search';
 import { Toast } from '../utils/Toast';
 import { motion } from 'framer-motion';
+import fondo from '/assets/footer-bg.jpg'
 
 const AllSeries = ({ title }) => {
     const [movies, setMovies] = useState([]);
@@ -59,7 +60,7 @@ const AllSeries = ({ title }) => {
         <>
             <Navbar />
             <div className='w-full text-white'>
-                <img className=' w-full h-[17rem] sm:h-[25rem] object-cover' onLoad={handleImageLoaded} src="./src/assets/footer-bg.jpg" alt="" />
+                <img className=' w-full h-[17rem] sm:h-[25rem] object-cover' onLoad={handleImageLoaded} src={fondo} alt="" />
                 <div className='bg-gradient-to-t from-[#080F28] absolute top-0 left-0 w-full h-[17rem] sm:h-[25rem]'></div>
                 {imageLoaded && (<div className='absolute top-[13%] md:top-[10%] lg:top-[20%] p-4 md:p-8 left-1/2 transform -translate-x-1/2 items-center'>
                     <motion.h1
